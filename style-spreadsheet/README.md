@@ -89,9 +89,9 @@ Google スプレッドシートの書式の型。Claude がシートを作る・
 
 | 行 | 字 | 行の高さ | 寄せ | 線・塗り |
 |---|---|---|---|---|
-| 節の見出し | 11pt 太字 | 30px | 下 | 線なし |
+| 節の見出し | 11pt 太字 | 30px | 下・はみ出して表示 | 線なし |
 | 列の見出し | 10pt 太字 | 42px | 上下中央・折り返す | 下に太い線（SOLID_MEDIUM、#202124） |
-| 表の中の区切りの行 | 11pt 太字 | 表の行と同じ | 表の行と同じ | #F1F3F4 で塗る |
+| 表の中の区切りの行 | 11pt 太字 | 表の行と同じ | 表の行と同じ・はみ出して表示 | #F1F3F4 で塗る |
 | 一覧の表の行 | 10pt・#202124 | 21px の倍数 | 上 | 下に細い線（SOLID、#E8EAED） |
 | 判断の表の行 | 10pt・#202124 | 30px の倍数 | 上下中央 | 下に細い線（SOLID、#E8EAED） |
 
@@ -132,6 +132,7 @@ Google Sheets の道具（update_spreadsheet）は spreadsheets.batchUpdate を�
 | プルダウン | setDataValidation | condition ONE_OF_LIST、strict true、showCustomUi true（色とチップの形は Chrome で） |
 
 - repeatCell の fields は、変える項目だけを並べる（userEnteredFormat 全体を指すと、指定しなかった書式が消える）。
+- fields は括弧でまとめた書き方（userEnteredFormat(textFormat,padding)）を受け付けない。userEnteredFormat.textFormat,userEnteredFormat.padding のように1つずつ並べる（get_spreadsheet の fields も同じ）。
 - 色は rgbColor に 0〜1 の小数で渡す（#202124 → 0.125, 0.129, 0.141）。
 - 書式を読むときは、get_spreadsheet の ranges を小さく絞り、fields で要る項目だけを取る（広く読むと結果が大きくなる）。
 - 読んだ色は丸めで1ずれることがある（#202124 → #1F2023 など）。この文書の色に読み替える。
