@@ -6,7 +6,7 @@ Claude が使う共通の部品と型を置くリポジトリ（チャットの�
 | フォルダ | 中身 | 使うスキル |
 |---|---|---|
 | inlinetable/ | 選べる表（行ごとに仕分けてまとめて送る表）の共通部品。CSS とスクリプトを1本にしたもの | cl-inlinetable |
-| style-spreadsheet/ | Google スプレッドシートの書式の型の決まり（README） | cl-style-spreadsheet |
+| style-spreadsheet/ | Google スプレッドシートの書式の型の決まり（README）と、型を塗る GAS（paint.js） | cl-style-spreadsheet |
 
 ---
 
