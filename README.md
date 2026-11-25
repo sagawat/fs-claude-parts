@@ -13,10 +13,10 @@ Claude がチャットの表示機能（インラインの表示）で出す部�
 
 選べる表（タスク一覧・工程一覧・メール一覧・スレッド一覧など）の、どの表でも同じ見た目と動きの決まり。表ごとの中身（集め方・段・列・ボタン・送る文・受けたあと）と、表を出す手順はスキル cl-inlinetable に従う。共通の決まりを変えるときは、部品とこの README を直す（「部品の直し方」）。
 
-今の版：`inlinetable/it_v261125d.js`
+今の版：`inlinetable/it_v261125e.js`
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/sagawat/fs-claude-parts@main/inlinetable/it_v261125d.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sagawat/fs-claude-parts@main/inlinetable/it_v261125e.js"></script>
 ```
 
 ## 1. 字と色
@@ -58,7 +58,7 @@ Claude がチャットの表示機能（インラインの表示）で出す部�
 
 ## 6-2. 札（作った所・回す先）
 
-- 行の下に「↪ プロジェクト › スレッド」の札を置ける（メール一覧の回す先、タスク一覧の作った所など）。札は `IT.chip(プロジェクト, スレッド, URL)` で作り、設定の `sub(r)` に渡すと、行の下の段（`.sb`）に出る。プロジェクトは灰色、› は薄く、スレッドは黒。URL を渡すと押せる札（`a.chip`）になり、渡さなければ押せない札になる。札の横の小さな字は `<span class="dt">`。
+- 行の下に「↪ プロジェクト › スレッド」の札を置ける（メール一覧の回す先、タスク一覧の作った所など）。札は `IT.chip(プロジェクト, スレッド, URL)` で作り、設定の `sub(r)` に渡すと、行の下の段（`.sb`）に出る。字は 11px、枠は細い灰色、角は 6px。プロジェクトと › は薄い灰色（--text-muted）、スレッドとアイコンは灰色（--text-secondary）。メール一覧（mail-upkeep）の申し送りの札と同じ見た目。URL を渡すと押せる札（`a.chip`）になり、渡さなければ押せない札になる。札の横の小さな字は `<span class="dt">`。
 - `.sb` の左の余白は、表ごとの CSS で列に合わせる（例：タスク一覧は番号の列の頭にそろえる `.sb{margin-left:52px}`）。
 
 ## 7. ページ送り
