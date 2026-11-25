@@ -1,11 +1,12 @@
 # fs-claude-parts
 Claude display parts (FARMSIDE)
 
-Claude がチャットの表示機能（インラインの表示）で出す部品を置くリポジトリ。中身は見た目と動きだけで、お客さまの情報や秘密は入れない。
+Claude が使う共通の部品と型を置くリポジトリ（チャットの表示機能で出す部品、成果物の書式の型など）。中身は見た目と動きと決まりだけで、お客さまの情報や秘密は入れない。
 
 | フォルダ | 中身 | 使うスキル |
 |---|---|---|
 | inlinetable/ | 選べる表（行ごとに仕分けてまとめて送る表）の共通部品。CSS とスクリプトを1本にしたもの | cl-inlinetable |
+| style-spreadsheet/ | Google スプレッドシートの書式の型の決まり（README） | cl-style-spreadsheet |
 
 ---
 
