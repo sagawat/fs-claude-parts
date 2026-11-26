@@ -7,6 +7,7 @@ Claude が使う共通の部品と型を置くリポジトリ（チャットの�
 |---|---|---|
 | inlinetable/ | 選べる表（行ごとに仕分けてまとめて送る表）の共通部品。CSS とスクリプトを1本にしたもの | cl-inlinetable |
 | style-spreadsheet/ | Google スプレッドシートの書式の型の決まり（README）と、型を塗る GAS（paint.js） | cl-style-spreadsheet |
+| itinerary/ | 出張計画の行程（出張管理の画面と同じ形のタイムライン）の部品と、画面から作り直すスクリプト（build.py）。決まりは itinerary/README.md | c03-trip-plan |
 
 ---
 
